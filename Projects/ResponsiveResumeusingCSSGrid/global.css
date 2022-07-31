@@ -1,0 +1,177 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'initial', Courier, monospace;
+}
+
+body {
+    background-color: rgb(196, 190, 190);
+}
+
+.main-content {
+    display: grid;
+    min-height: 1000px;
+    width: 90%;
+    margin: 20px auto;
+    grid-template-columns: 300px 700px;
+}
+
+.left-section {
+    grid-column: span 1;
+    background-color: black;
+    color: #fff;
+}
+
+.left-content {
+    padding: 1rem;    
+}
+
+.profile-image {
+    /* width: 60%; */
+    display: block;
+    margin: auto;
+    text-align: center;
+    /* border: 5px solid white; */
+    /* border-radius: 30%; */
+}
+.image {
+    width: 60%;
+    border-radius: 30%;
+    border: 5px solid white;
+}
+
+.name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.02px;
+    padding: 0.8rem;
+}
+
+.designation {
+    font-size: 1rem;
+    text-align: center;
+    padding-bottom: 0.5rem;
+    text-transform: uppercase;    
+}
+.description {
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.SocialMedia {
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem;
+}
+
+.icon {
+    
+    display: inline;
+    /* align-self: center; */
+}
+
+.fa-linkedin {  
+    background: #83abbd;  
+    color: white;  
+  }
+
+  .fa-square-twitter {  
+    background: #55ACEE;  
+    color: white;  
+  }
+
+  .fa-square-facebook {
+    background: #104a75;
+    color: white;
+  }
+
+.fa-square-github {
+    background-color: rgb(16, 7, 49);
+    color: #fff;
+}
+
+.personal-detail {
+    margin: 1rem;
+}
+
+.socialdetail-text {
+    font-size: 14px;
+}
+
+.icon {
+    display: block;
+    margin: .5rem;
+}
+
+.fa-phone {
+    color: rgb(85, 100, 163);
+}
+.fa-envelope {
+    color: rgb(85, 100, 163);
+}
+.fa-location-dot {
+    color: rgb(85, 100, 163);
+}
+
+.skills {
+    font-size: .75rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 0.5rem;
+    letter-spacing: .1rem;
+    font-weight: 700;
+}
+
+.skill-item {
+    margin-bottom: 1rem;
+}
+
+.skill-name {
+    font-size: 0.65rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+.progress-bar {
+    border: 1px solid white;
+    height: 4px;
+    background-color: #fff;
+}
+
+.right-section {
+    grid-column: span 1 / span 2;
+    background-color: #fff;
+    color: black;
+}
+
+.right-main-content {
+    padding: 2rem 3rem;
+}
+
+.right-title {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.education-detail {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* .edu-td {
+    
+  } */
+
+
+
+
+
+
+
