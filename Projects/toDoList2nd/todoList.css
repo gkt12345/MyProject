@@ -1,0 +1,43 @@
+.container {
+    width: 50%;
+    min-height: 175px;
+    border: 1px solid gray;
+    background-color: rgb(250, 245, 246);
+    margin: 25px auto;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin: 20px auto;
+    width: 100%;
+    text-align: center;
+}
+
+input {
+    width: 50%;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid gray;
+
+}
+
+button {
+    border: 0;
+    width: 25%;
+    height: 30px;
+    background-color: rgb(11, 32, 11);
+    color: white;
+    border-radius: 5px;
+    
+}
+
+.notes, h1 {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+
+}
+.form-button {
+    display: inline;
+    margin-left: 10px;
+}

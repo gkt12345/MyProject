@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharable URLs</title>
+</head>
+
+<body>
+
+    <form>
+        <h3 id="url">https://localhost:8080/</h3>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name">
+        <br><br>
+
+        <label for="year">Year</label><br>
+        <input type="number" id="year" name="year">
+        <br><br>
+
+        <button id="button" onclick="onClick(event)">Submit</button>
+    </form>
+
+    <script>
+        let url = document.getElementById("url");
+        let inputName = document.getElementById("name");
+        let inputYear = document.getElementById("year");
+
+        function onClick(e) {
+            e.preventDefault();
+
+            if (inputName.value && inputYear.value) {
+                var spanBoth = document.createElement('span');
+                spanBoth.innerHTML = "?name=" + inputName.value + "&year=" + inputYear.value;
+                url.appendChild(spanBoth);
+
+            }
+
+            else if (inputName.value) {
+                var spanName = document.createElement('span');
+                spanName.innerHTML = "?name=" + inputName.value;
+                url.appendChild(spanName);
+
+            }
+            else if (inputYear.value) {
+                var spanYear = document.createElement('span');
+                spanYear.innerHTML = "?year=" + inputYear.value;
+                url.appendChild(spanYear);
+
+            }
+        }
+    </script>
+</body>
+
+</html>

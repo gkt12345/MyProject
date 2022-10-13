@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .text-here{
+            font-weight: bold;
+            font-style: italic;
+            text-decoration: underline;
+        } */
+
+        /* #font{
+            font-family:Georgia, 'Times New Roman', Times, serif 
+        } */
+    </style>
+</head>
+
+<body>
+
+    <div class="text-here" id="text-container">
+        Hello Programing  
+    </div>
+    <br>
+    <input type="text" id="colorbox">
+    <br><br>
+    <label for="points" class="points">Font Size Change:</label>
+    <input type="range" id="points" name="points" min="10" max="100" defautl="55">
+    <br><br>
+
+    <button class="stylebt" id="boldbtn">Bold</button>
+    <button class="stylebt" id="italicbtn">Italics</button>
+    <button class="stylebt" id="underlinebtn" >Underline</button> <br><br>
+
+    <label for="font">font families: </label>
+    <select id="font" name="font">
+        <option>--Chose Font Color--</option>
+        <option value="Courier New">Courier New</option>
+        <option value="Arial Narrow">Arial Narrow</option>
+        <option value="Arial">Arial</option>
+        <option value="Times New Roman">Times New Roman</option>
+        <option value="Georgia">Georgia</option>
+    </select><br><br>
+
+    <button class="stylebt" id="submitBtn">Button</button>
+
+
+</body>
+
+<script>
+    let textBox = document.querySelector("#text-container");
+
+    document.getElementById("colorbox")
+    .addEventListener('change', function(e){
+            textBox.style.color = e.target.value;
+    });
+
+
+    document.getElementById("boldbtn")
+    .addEventListener('click', function(){
+            // let parentBold = document.createElement("b");
+            // textBox.appendChild(parentBold);
+            textBox.style.fontWeight =  "bold";
+    });
+
+    document.getElementById("italicbtn")
+    .addEventListener('click', function(){
+        textBox.style.fontStyle = "italic";
+    });
+
+    document.getElementById("underlinebtn")
+    .addEventListener('click', function(){
+        textBox.style.textDecoration =  "underline";
+    });
+
+    document.getElementById("font")
+    .addEventListener('change', function(e){
+        textBox.style.fontFamily = e.target.value;
+    });
+
+
+    
+</script>
+
+</html>

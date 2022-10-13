@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+    .completed {
+    text-decoration: line-through solid rgb(0, 0, 0);
+  }
+    </style>
+    <title>TO Do List</title>
+</head>
+<body>
+    <header>My Todo list</header>
+    <form>
+        <div>
+            <input type="text" class="todo-input">
+            <button type="submit" class="todo-button">ADD</button>
+        </div>
+    </form>
+
+    <div class="todo-container">
+        <ul class="todo-list">
+            
+        </ul>
+    </div>
+
+    <script>
+        let todoInput = document.querySelector(".todo-input");
+        let addList = document.querySelector(".todo-button");
+        let todoList = document.querySelector(".todo-list");
+        
+        addList.addEventListener("click", addTodo);
+
+        function addTodo(event){
+            event.preventDefault();
+
+            let todoDiv = document.createElement("div");
+            todoDiv.classList.add("todo");
+
+            let newTodo = document.createElement("li");
+            newTodo.innerText = todoInput.value;
+            newTodo.classList.add("todo-item");
+            todoDiv.appendChild(newTodo);
+            todoInput.value = "";
+            
+            let completeBtn = document.createElement("button");
+            completeBtn.innerHTML = "Completed";
+            completeBtn.classList.add("complete-btn");
+            completeBtn.onclick = check;
+            todoDiv.appendChild(completeBtn);
+            
+            let trashbtn = document.createElement("button");
+            trashbtn.innerHTML = "Delete";
+            trashbtn.classList.add("trash-btn");
+            todoDiv.appendChild(trashbtn);
+            trashbtn.onclick = deleteItem;
+
+            todoList.appendChild(todoDiv);
+        }
+
+        function check(e){
+            e.target.parentElement.firstChild.classList.toggle("completed");
+        }
+
+        function deleteItem(e){
+            e.target.parentElement.remove();
+        }
+
+
+    </script>
+
+</body>
+</html>   
