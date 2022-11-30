@@ -1,0 +1,122 @@
+.footer{
+    text-align: center;
+    height: 50px;
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(231, 231, 245);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-weight: 700;
+}
+
+.container{
+    margin-top: 20px;
+    height: auto;
+    width: 300px;
+    border: 1px solid lightblue;
+    box-shadow: 3px 3px 6px;
+    border-radius: 12px;
+    text-align: start;
+}
+
+/* .titleDiv{
+    margin: 10px 3px;
+    font-weight: 700;
+} */
+
+.titleInput{
+    margin: 10px 3px;   
+    font-weight: 700;
+    border: none;
+    margin-left: 5px;
+    width: 90%;
+}
+.titleInput:focus{
+    outline: none;
+}
+
+.textarieaDiv{
+    margin: 3px;
+    font-size: medium;
+}
+
+.textArea{
+    height: auto;
+    width: 95%;
+    margin-left: 5px;
+    border: none;
+    resize: none;  
+}
+.textArea:focus{
+    outline: none;
+}
+
+.mainbtn{
+    display: flex;
+    justify-content: end;
+}
+
+.mainbtnsign{
+    border: none;
+    font-size: 25px;
+    background-color: #fff;
+    text-shadow: 3px 3px 3px blue;
+    border-radius: 50%;
+    box-shadow: 3px 3px 4px;
+}
+
+.mainbtnsign:hover{
+    text-shadow: 5px 4px 6px green;
+}
+.mainbtnsign:focus{
+    outline: none;
+}
+
+.listContainer{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+.card{
+    width: 250px;
+    max-height: 300px;
+    padding: 7px;
+    margin: 10px;
+    border-radius: 10px;
+    border: .5px solid rgb(243, 187, 82);
+    box-shadow: 2px 2px 3px orange;
+}
+.listtitle{
+    font-weight: 700;
+}
+.listContent{
+    min-height: 75px;
+    margin-top: 10px;
+}
+.listbuttonDiv{
+    display: flex;
+    justify-content: end;
+}
+
+.listbutton{
+    border: none;
+    font-size: 20px;
+    color: #fff;
+    background-color: white;
+    text-shadow: 3px 3px 3px blue;
+    border-radius: 50%;
+    box-shadow: 3px 3px 4px blue;
+}
+.listbutton:focus{
+    outline: none;
+}
+
+
+/* .listbutton:hover{
+       
+} */

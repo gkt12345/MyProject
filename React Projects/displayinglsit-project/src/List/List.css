@@ -1,0 +1,32 @@
+.list-box{
+    width: 400px;
+    height: auto;
+    border:1px solid black;
+    box-shadow: 8px 10px 15px;
+    margin: 50px auto;
+    border-radius: 10px;
+    background-color: antiquewhite;
+}
+
+
+
+
+
+
+
+
+/* .list-box{
+    width: 400px;
+    min-height: 200px;
+    margin: 50px auto;
+    border:1px solid black;
+}
+
+.list{
+    margin:10px;
+}
+
+.list-button{
+    display: inline-block;
+    margin-left:10px;
+} */

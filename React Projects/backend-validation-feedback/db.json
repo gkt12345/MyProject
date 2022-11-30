@@ -1,0 +1,24 @@
+{
+  "feedbackquestions": [
+    {
+      "question": "How was the lecture today",
+      "options": ["Good","Average","Bellow Average"],
+      "id": 1
+    },
+    {
+      "question": "How was the Communication",
+      "options": ["Good","Average","Bellow Average"],
+      "id": 2
+    },
+    {
+      "question": "How was the Lecture Note",
+      "options": ["Good","Average","Bellow Average"],
+      "id": 3
+    },
+    {
+      "question": "Overall Feedback",
+      "options": ["Good","Average","Bellow Average"],
+      "id": 4
+    }
+  ]
+}

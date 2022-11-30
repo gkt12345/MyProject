@@ -1,0 +1,28 @@
+{
+  "List": [
+    {
+      "title": "javascript",
+      "amount": 4000,
+      "duration": 4,
+      "id": 1
+    },
+    {
+      "title": "html",
+      "amount": 2000,
+      "duration": 1,
+      "id": 2
+    },
+    {
+      "title": "java",
+      "amount": 400,
+      "duration": 4,
+      "id": 3
+    },
+    {
+      "title": "Mongodb",
+      "amount": "2500",
+      "duration": "1",
+      "id": 4
+    }
+  ]
+}
