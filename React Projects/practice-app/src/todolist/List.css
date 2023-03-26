@@ -1,0 +1,29 @@
+ul{
+    height: auto;
+    width: 80%;
+    text-align: left;
+    margin: 20px auto;
+}
+.licontainer{
+    display: flex;
+    justify-content:space-between;
+    background-color: rgb(208, 242, 241);
+    line-height: 30px;
+    color: darkcyan;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+li{
+    width: 90%;
+    padding: 0 5px;    
+}
+.listbtn{
+    border: none;
+    background-color: rgb(208, 242, 241);
+    font-weight: 700;
+    cursor: pointer;
+}
+.listbtn:hover{
+    transform: scale(1.1);
+}
