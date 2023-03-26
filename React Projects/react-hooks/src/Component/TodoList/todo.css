@@ -1,0 +1,14 @@
+.todocontainer{
+    
+    display: flex;
+    justify-content: center;
+    gap: 100%;
+    flex-wrap: wrap;
+}
+
+.inputField{
+    height: 100px;
+    width: 300px;
+    margin-top: 20px;
+    /* border: 1px solid; */
+}
