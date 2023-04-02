@@ -47,27 +47,18 @@
 
         function onSelectionHandler(event) {
             let input = event.target.value;
-            let paragraph = document.getElementById("paragraph-input").innerHTML;
+            let paragraph = document.getElementById("paragraph-input");
             // console.log(event.target.value); 
            console.log(paragraph);
       
-           let praArr = paragraph.split('');
-            console.log(praArr);
-
-           const newPara = praArr.map((el, id)=>{
-                   if(el == input){
-                    //    console.log(el.innerHTML); 
-                     return el[id]= `<span class='highlighted-txt'>${el}</span>`;
-                   }
-                   else{
-                    return el;
-                   } 
-            })
-
-            // console.log(newPara.join(' ').toString());
-            let para2 = document.getElementById("paragraph-input");
-            para2.innerHTML = newPara.join('').toString();
-
+           if(input !== ""){
+                let regExp = new RegExp(input, 'gi');
+                paragraph.innerHTML = (paragraph.textContent).replace(regExp, "<mark>$&</mark>");
+           }     
+       
+       
+       
+       
         // if (checkBox) {
             //     result = paragraph.innerText.replaceAll(new RegExp(input,"ig"),function (section) {
             //         count++;
